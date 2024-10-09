@@ -3,14 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Web Sitesi 1</title>
+    <title>Web Sitesi</title>
+    <style>
+        :root {
+            --frosted-background: rgba(255, 255, 255, 0.2);
+            --frosted-blur: 15px;
+            --frosted-padding: 20px;
+            --frosted-border-radius: 10px;
+            --frosted-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            --frosted-opacity: 0.8;
+            --frosted-transition: all 0.3s ease;
+            --frosted-title-color: #ffffff;
+            --frosted-text-color: #eeeeee;
+        }
+
+        .frosted-container {
+            background: rgba(255, 255, 255, var(--frosted-opacity));
+            backdrop-filter: blur(var(--frosted-blur));
+            padding: var(--frosted-padding);
+            border-radius: var(--frosted-border-radius);
+            box-shadow: var(--frosted-box-shadow);
+            transition: var(--frosted-transition);
+        }
+
+        .frosted-header {
+            font-size: 24px;
+            color: var(--frosted-title-color);
+            margin-bottom: 10px;
+        }
+
+        .frosted-text {
+            color: var(--frosted-text-color);
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .frosted-button {
+            background: var(--frosted-title-color);
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .frosted-button:hover {
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .frosted-link {
+            color: #00b0f4;
+            text-decoration: none;
+        }
+
+        .frosted-link:hover {
+            text-decoration: underline;
+        }
+
+        .frosted-content {
+            padding: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            .frosted-container {
+                padding: 10px;
+            }
+          
+            .frosted-header {
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="frosted-container">
-        <h1 class="frosted-header"></h1>
-        <p class="frosted-text"></p>
-        <button class="frosted-button"></button>
+        <h1 class="frosted-header">CSS Kodu</h1>
+        <pre>
+:root {
+    --frosted-background: rgba(255, 255, 255, 0.2);
+    --frosted-blur: 15px;
+    --frosted-padding: 20px;
+    --frosted-border-radius: 10px;
+    --frosted-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    --frosted-opacity: 0.8;
+    --frosted-transition: all 0.3s ease;
+    --frosted-title-color: #ffffff;
+    --frosted-text-color: #eeeeee;
+}
+
+.frosted-container {
+    background: rgba(255, 255, 255, var(--frosted-opacity));
+    backdrop-filter: blur(var(--frosted-blur));
+    padding: var(--frosted-padding);
+    border-radius: var(--frosted-border-radius);
+    box-shadow: var(--frosted-box-shadow);
+    transition: var(--frosted-transition);
+}
+
+.frosted-header {
+    font-size: 24px;
+    color: var(--frosted-title-color);
+    margin-bottom: 10px;
+}
+
+.frosted-text {
+    color: var(--frosted-text-color);
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.frosted-button {
+    background: var(--frosted-title-color);
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.frosted-button:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.frosted-link {
+    color: #00b0f4;
+    text-decoration: none;
+}
+
+.frosted-link:hover {
+    text-decoration: underline;
+}
+
+.frosted-content {
+    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 600px) {
+    .frosted-container {
+        padding: 10px;
+    }
+  
+    .frosted-header {
+        font-size: 20px;
+    }
+}
+        </pre>
     </div>
 </body>
 </html>
