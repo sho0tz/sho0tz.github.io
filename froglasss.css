@@ -1,14 +1,14 @@
-/* FrostedGlass benzeri CSS */
+
 :root {
-  --frosted-background: rgba(255, 255, 255, 0.2); /* Buzlu arka plan rengi */
-  --frosted-blur: 15px; /* Bulanıklık miktarı */
-  --frosted-padding: 20px; /* İçerik boşluğu */
-  --frosted-border-radius: 10px; /* Kenar yuvarlama */
-  --frosted-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Gölgelendirme */
+  --frosted-background: rgba(255, 255, 255, 0.2);
+  --frosted-blur: 15px;
+  --frosted-padding: 20px;
+  --frosted-border-radius: 10px;
+  --frosted-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
   --frosted-opacity: 0.8; /* Opaklık */
-  --frosted-transition: all 0.3s ease; /* Geçiş efekti */
-  --frosted-title-color: #ffffff; /* Başlık rengi */
-  --frosted-text-color: #eeeeee; /* Metin rengi */
+  --frosted-transition: all 0.3s ease; 
+  --frosted-title-color: #ffffff;
+  --frosted-text-color: #eeeeee;
 }
 
 .frosted-container {
@@ -21,53 +21,53 @@
 }
 
 .frosted-header {
-  font-size: 24px; /* Başlık boyutu */
+  font-size: 24px;
   color: var(--frosted-title-color);
-  margin-bottom: 10px; /* Alt boşluk */
+  margin-bottom: 10px;
 }
 
 .frosted-text {
   color: var(--frosted-text-color);
-  line-height: 1.5; /* Satır aralığı */
-  margin-bottom: 15px; /* Alt boşluk */
+  line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 .frosted-button {
   background: var(--frosted-title-color);
-  color: #ffffff; /* Buton metni rengi */
+  color: #ffffff;
   border: none;
-  padding: 10px 15px; /* Buton iç boşluk */
-  border-radius: 5px; /* Kenar yuvarlama */
-  cursor: pointer; /* İmleç değişimi */
-  transition: background 0.3s; /* Geçiş efekti */
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .frosted-button:hover {
-  background: rgba(255, 255, 255, 0.7); /* Hover durumu */
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .frosted-link {
-  color: #00b0f4; /* Link rengi */
-  text-decoration: none; /* Altı çizili değil */
+  color: #00b0f4;
+  text-decoration: none;
 }
 
 .frosted-link:hover {
-  text-decoration: underline; /* Hover durumu */
+  text-decoration: underline;
 }
 
-/* Dışarıdan gelen içerik için özel stil */
+
 .frosted-content {
   padding: 15px; /* İçerik boşluğu */
-  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Üst kenar çizgisi */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Medya sorguları ile mobil uyumlu hale getirme */
+
 @media (max-width: 600px) {
   .frosted-container {
-    padding: 10px; /* Daha az boşluk mobilde */
+    padding: 10px;
   }
   
   .frosted-header {
-    font-size: 20px; /* Küçük başlık boyutu */
+    font-size: 20px;
   }
 }
