@@ -1,0 +1,73 @@
+/* FrostedGlass benzeri CSS */
+:root {
+  --frosted-background: rgba(255, 255, 255, 0.2); /* Buzlu arka plan rengi */
+  --frosted-blur: 15px; /* Bulanıklık miktarı */
+  --frosted-padding: 20px; /* İçerik boşluğu */
+  --frosted-border-radius: 10px; /* Kenar yuvarlama */
+  --frosted-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Gölgelendirme */
+  --frosted-opacity: 0.8; /* Opaklık */
+  --frosted-transition: all 0.3s ease; /* Geçiş efekti */
+  --frosted-title-color: #ffffff; /* Başlık rengi */
+  --frosted-text-color: #eeeeee; /* Metin rengi */
+}
+
+.frosted-container {
+  background: rgba(255, 255, 255, var(--frosted-opacity));
+  backdrop-filter: blur(var(--frosted-blur));
+  padding: var(--frosted-padding);
+  border-radius: var(--frosted-border-radius);
+  box-shadow: var(--frosted-box-shadow);
+  transition: var(--frosted-transition);
+}
+
+.frosted-header {
+  font-size: 24px; /* Başlık boyutu */
+  color: var(--frosted-title-color);
+  margin-bottom: 10px; /* Alt boşluk */
+}
+
+.frosted-text {
+  color: var(--frosted-text-color);
+  line-height: 1.5; /* Satır aralığı */
+  margin-bottom: 15px; /* Alt boşluk */
+}
+
+.frosted-button {
+  background: var(--frosted-title-color);
+  color: #ffffff; /* Buton metni rengi */
+  border: none;
+  padding: 10px 15px; /* Buton iç boşluk */
+  border-radius: 5px; /* Kenar yuvarlama */
+  cursor: pointer; /* İmleç değişimi */
+  transition: background 0.3s; /* Geçiş efekti */
+}
+
+.frosted-button:hover {
+  background: rgba(255, 255, 255, 0.7); /* Hover durumu */
+}
+
+.frosted-link {
+  color: #00b0f4; /* Link rengi */
+  text-decoration: none; /* Altı çizili değil */
+}
+
+.frosted-link:hover {
+  text-decoration: underline; /* Hover durumu */
+}
+
+/* Dışarıdan gelen içerik için özel stil */
+.frosted-content {
+  padding: 15px; /* İçerik boşluğu */
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Üst kenar çizgisi */
+}
+
+/* Medya sorguları ile mobil uyumlu hale getirme */
+@media (max-width: 600px) {
+  .frosted-container {
+    padding: 10px; /* Daha az boşluk mobilde */
+  }
+  
+  .frosted-header {
+    font-size: 20px; /* Küçük başlık boyutu */
+  }
+}
